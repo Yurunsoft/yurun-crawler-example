@@ -1,0 +1,25 @@
+{
+    "name": "yurunsoft/yurun-crawler-example",
+    "type": "project",
+    "description": "宇润爬虫框架(Yurun Crawler) 是一个低代码、高性能、分布式爬虫采集框架，这可能是最一把梭的爬虫框架。",
+    "require": {
+        "yurunsoft/crawler": "~1.0"
+    },
+    "require-dev": {
+        "yurunsoft/ide-helper": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yurun\\CrawlerApp\\": "./"
+        }
+    },
+    "prefer-stable": true,
+    "extra": {
+        "ide-helper": {
+            "list": [
+                "swoole",
+                "redis"
+            ]
+        }
+    }
+}
