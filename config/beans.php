@@ -66,7 +66,7 @@ return [
                 // 使用的队列驱动
                 'driver'        =>  \Imi\Queue\Driver\RedisQueueDriver::class,
                 // 消费协程数量，下载器的可以稍微多一些
-                'co'            =>  1024,
+                'co'            =>  16,
                 // 消费进程数量；可能会受进程分组影响，以同一组中配置的最多进程数量为准
                 'process'       =>  1,
                 // 消费循环尝试 pop 的时间间隔，单位：秒
