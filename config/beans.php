@@ -90,7 +90,7 @@ return [
                 // 消费协程数量
                 'co'            =>  1,
                 // 消费进程数量；可能会受进程分组影响，以同一组中配置的最多进程数量为准
-                'process'       =>  swoole_cpu_num(),
+                'process'       =>  1,
                 // 消费循环尝试 pop 的时间间隔，单位：秒
                 'timespan'      =>  0.1,
                 // 进程分组名称
@@ -110,9 +110,9 @@ return [
                 // 使用的队列驱动
                 'driver'        =>  \Imi\Queue\Driver\RedisQueueDriver::class,
                 // 消费协程数量
-                'co'            =>  swoole_cpu_num(),
+                'co'            =>  2,
                 // 消费进程数量；可能会受进程分组影响，以同一组中配置的最多进程数量为准
-                'process'       =>  swoole_cpu_num(),
+                'process'       =>  1,
                 // 消费循环尝试 pop 的时间间隔，单位：秒
                 'timespan'      =>  0.1,
                 // 进程分组名称
@@ -128,5 +128,9 @@ return [
                 ]
             ],
         ],
+    ],
+    'ChromeDownloader'  =>  [
+        'path'      =>  'http://127.0.0.1:9222/json', // 可执行文件路径或http接口地址
+        'options'   =>  [], // 创建浏览器的参数
     ],
 ];

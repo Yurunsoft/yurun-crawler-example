@@ -18,6 +18,14 @@ Yurun Crawler 基于 imi 框架开发，运行在 Swoole 常驻内存的协程�
 
 * 运行：`bin/run crawler/run -name YurunBlogCrawler`
 
+**Chrome 采集 Demo：**
+
+运行：`bin/run crawler/run -name YurunBlogChromeCrawler`
+
+配置：`config/beans.php` -> `ChromeDownloader`
+
+> 文档参考：<https://doc.yurunsoft.com/yurun-crawler/features/chromeHeadless.html>
+
 > Demo 为了不给别人造成麻烦，是爬我自己的博客，请轻点哦。。。
 
 ## 联系我们
