@@ -78,7 +78,7 @@ return [
                 'asyncClass'    =>    \Imi\Redis\CoroutineRedisPool::class,
                 'config' => [
                     // 池子中最多资源数
-                    'maxResources' => 16,
+                    'maxResources' => 32,
                     // 池子中最少资源数
                     'minResources' => 0,
                 ],

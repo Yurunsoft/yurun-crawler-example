@@ -21,5 +21,10 @@
                 "redis"
             ]
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "yurunsoft/ide-helper": true
+        }
     }
 }
